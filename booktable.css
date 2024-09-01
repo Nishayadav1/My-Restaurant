@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    /* background-image: url('./Asstes/img8.jpg'); Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Layer the gradient over the background image */
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), /* Darker color with higher opacity */
+        rgba(0, 0, 0, 0.2)  /* Lighter color with lower opacity */
+    ), url('./Asstes/img8.jpg'); /* Background image */
+    background-size: cover, cover;
+    background-position: center, center;
+}
+
+.booktable-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    /* background: rgba(0, 0, 0, 0.6); Semi-transparent background for better readability */
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    width: 100%; /* Ensure the form takes up the full width of its container */
+    max-width: 800px; /* Limit the maximum width for better readability */
+    padding: 20px; /* Added padding for better spacing inside the form */
+    box-sizing: border-box; /* Ensure padding and border are included in the width/height */
+    /* background-color: white; Added background color */
+    border-radius: 10px; /* Round the corners of the form */
+}
+
+.book-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px; /* Ensure the box doesn't exceed a readable width */
+    box-sizing: border-box; /* Ensure padding and border are included in the width/height */
+}
+
+
+/* .booktable-sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+}
+form{
+    border: 20px solid;
+    display: flex;
+    width:80vw;
+    padding: 0px;
+    justify-content: center;
+    
+}
+.book-box {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+} */
+
+.book-box h1 {
+    font-size: 2rem;
+    color:#ff6347;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.book-box div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-cross i {
+    /* border: 2px solid; */
+    padding:1rem ;
+    font-size: 2.5rem;
+    cursor: pointer;
+    /* width: 5rem; */
+    transition: transform 0.8s; 
+
+}
+
+.book-cross i:hover {
+    transform: rotate(360deg); /* Rotate 360 degrees in place */
+}
+
+
+
+.book-box label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color:black;
+}
+
+.book-box input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.book-box button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    /* transition: background-color 0.3s; */
+}
+
+.book-box button:hover {
+    background-color:rgb(236, 131, 89);
+
+}
+
+/* ----------------------------------------------------------------- */
+.after-book {
+    background-color: #fff;
+    height: 300px;
+    width: 500px;
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    text-align: center;
+    display: none;
+    padding-top:3rem ;
+    
+}
+
+.after-book h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.after-book p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.after-book button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #ff6347; /* Blue color for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.after-book button:hover {
+    background-color: #e9833f; /* Darker blue on hover */
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .book-box {
+        padding: 1.5rem;
+    }
+
+    .book-box h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .book-box {
+        padding: 1rem;
+    }
+
+    .book-box h1 {
+        font-size: 1.25rem;
+    }
+
+    .book-box button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
