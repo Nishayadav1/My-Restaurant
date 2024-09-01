@@ -8,9 +8,7 @@
 }
 
 body {
-    /* background-image: url('./Asstes/img8.jpg'); Replace with your image path */
-    background-size: cover;
-    background-position: center;
+    /* border:2px solid red; */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -21,14 +19,15 @@ body {
         rgba(0, 0, 0, 0.2)  /* Lighter color with lower opacity */
     ), url('./Asstes/img8.jpg'); /* Background image */
     background-size: cover, cover;
-    background-position: center, center;
+    /* background-position: center, center; */
 }
 
 .booktable-sec {
+    /* border:2px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
     padding: 20px;
     /* background: rgba(0, 0, 0, 0.6); Semi-transparent background for better readability */
     border-radius: 10px;
