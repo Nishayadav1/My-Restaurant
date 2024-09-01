@@ -23,36 +23,43 @@ body {
 }
 
 .booktable-sec {
-    /* border:2px solid red; */
+    /* border: 2px solid red; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    padding: 20px;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    width: 70%;
+    padding: 20px; /* Added padding for spacing inside the section */
     /* background: rgba(0, 0, 0, 0.6); Semi-transparent background for better readability */
     border-radius: 10px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    margin: 0 auto; /* Center the section horizontally within its container */
 }
 
 form {
+    /* border: 2px solid green; */
     display: flex;
-    flex-direction: column; /* Align content vertically */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center form content horizontally */
+    max-width: 900px;
     width: 100%; /* Ensure the form takes up the full width of its container */
-    max-width: 800px; /* Limit the maximum width for better readability */
-    padding: 20px; /* Added padding for better spacing inside the form */
+    padding: 20px; /* Padding for spacing inside the form */
     box-sizing: border-box; /* Ensure padding and border are included in the width/height */
-    /* background-color: white; Added background color */
-    border-radius: 10px; /* Round the corners of the form */
+    border-radius: 10px;
+    margin: 0 auto; /* Center the form horizontally within its container */
 }
 
 .book-box {
+    /* border: 2px solid blue; */
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 500px; /* Ensure the box doesn't exceed a readable width */
+    max-width: 500px; /* Limit the maximum width for better readability */
     box-sizing: border-box; /* Ensure padding and border are included in the width/height */
+    margin: 0 auto; /* Center the box horizontally within its container */
 }
+
 
 
 /* .booktable-sec {
