@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2), /* Darker color with higher opacity */
+        rgba(0, 0, 0, 0.6)  /* Lighter color with lower opacity */
+    ), url('./Asstes/back.jpg'); /* Background image */
+    background-size: cover;
+    /* background-position: center, center; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.signin-container {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+.signin-box {
+    /* border: 2px solid red; */
+    background-color: rgb(219, 172, 118);
+    padding: 1rem 3rem;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* .signin-box div{
+    display: flex;
+    justify-content: space-between;
+} */
+.signin-box h1 {
+    /* border: 2px solid red; */
+    font-size: 2.5rem;
+    color: #b95b03;
+    /* text-shadow: 3px 3px #FFff; */
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.signin-cross i {
+    /* padding-top: 2rem; */
+    /* border: 2px solid; */
+    padding:1rem ;
+    font-size: 2.5rem;
+    cursor: pointer;
+    /* width: 5rem; */
+    margin-top: 1rem;
+    transition: transform 0.8s; 
+
+}
+
+.signin-cross i:hover {
+    transform: rotate(360deg); /* Rotate 360 degrees in place */
+}
+
+.signin-box label {
+     /* border: 2px solid red; */
+    display: block;
+    margin-bottom: 0.5rem;
+    color:black;
+    text-align: left;
+
+}
+
+.signin-box input {
+    width: 100%;
+    padding: 0.65rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signin-box button {
+    width: 30%;
+    padding: 0.75rem;
+    background-color: #ec8320;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signin-box button:hover {
+    background-color: #ebab36;
+}
+form a{
+    text-decoration:none;
+}
+form p{
+   color: red;
+   line-height:5px;
+   font-size:0.8rem;
+
+   cursor: pointer;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .signin-box {
+        padding: 1.5rem;
+    }
+
+    .signin-box h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .signin-box {
+        padding: 1rem;
+    }
+
+    .signin-box h1 {
+        font-size: 1.25rem;
+    }
+
+    .signin-box button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
